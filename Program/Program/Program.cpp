@@ -2,97 +2,43 @@
 
 using namespace std;
 
-template <typename T>
-class List
+template<typename T>
+class Vector
 {
 private:
-    struct Node
-    {
-        T data;
-        Node* next;
-    };
-    int size;
-    Node* head;
+    T* container;
+    int m_size;
+    int capacity;
 
 public:
 
-    List()
+    Vector()
     {
-        size = 0;
-        head = nullptr;
+        m_size = 0;
+        capacity = 0;
+        container = nullptr;
     }
 
-    void push_front(T data)
+    const int& size()
     {
-        Node* newNode = new Node;
-        newNode->data = data;
-
-        if (head == nullptr)
-        {
-            head = newNode;
-            newNode->next = head;
-        }
-        else
-        {
-            newNode->next = head->next;
-            head->next = newNode;
-        }
-        size++;
+        return m_size;
     }
 
-    void pop_front()
+    const int& operator [] (int index)
     {
-        if (head == nullptr)
-        {
-            cout << "linked list is empty" << endl;
-        }
-        else
-        {
-            Node* deleteNode = head->next;
-
-            if (head == head->next)
-            {
-                head = nullptr;
-            }
-            else
-            {
-                head->next = deleteNode->next;
-            }
-            delete deleteNode;
-            size--;
-        }
+        return container[index];
     }
 
-    void push_back(T data)
+    ~Vector()
     {
-        Node* newNode = new Node;
-
-        newNode->data = data;
-
-        if (head == nullptr)
-        {
-            head = newNode;
-            newNode->next = head;
-        }
-        else
-        {
-            newNode->next = head->next;
-            head->next = newNode;
-            head = newNode;
-        }
-        size++;
+        delete [] container;
     }
 };
 
 int main()
 {
-    List<int> list;
+    Vector<int> vector;
 
-    list.push_back(10);
-    list.push_back(20);
-    list.pop_front();
-    list.pop_front();
-    list.pop_front();
 
     return 0;
 }
