@@ -1,30 +1,48 @@
 ﻿#include <iostream>
-#define SIZE 4
 
 using namespace std;
 
 template<typename T>
-class Queue
+class PriorityQueue
 {
 private:
-    T container[SIZE];
-    
-    int m_rear, m_front;
+    T* container;
+    int capacity;
+    int index;
 public:
-    Queue()
+    PriorityQueue()
     {
-        m_rear = SIZE - 1, m_front = SIZE - 1;
-        for (int i = 0; i < SIZE; i++)
+        container = nullptr;
+        capacity = 0;
+        index = 0;
+    }
+
+    void resize(int newSize)
+    {
+        capacity = newSize;
+
+        T* temporary = new T[capacity];
+
+        for (int i = 0; i < capacity; i++)
         {
-            container[i] = NULL;
+            temporary[i] = NULL;
         }
+        for (int i = 0; i < index; i++)
+        {
+            temporary[i] = container[i];
+        }
+
+        delete[] container;
+
+        container = temporary;
     }
 };
 
 int main()
 {
-    Queue<int> queue;
+    PriorityQueue<int> priorityQueue;
 
+    priorityQueue.resize(2);
 
     return 0;
 }
