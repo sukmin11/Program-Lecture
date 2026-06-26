@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{0326E932-D236-478B-A142-B644DB11AD72}|Program\\Program.vcxproj|solutionrelative:Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B1AA87F-ECA8-42F1-A260-35C11AC99C8F}|Class 5th (Stack)\\Class 5th (Stack).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class 5th (Stack)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1B1AA87F-ECA8-42F1-A260-35C11AC99C8F}|Class 5th (Stack)\\Class 5th (Stack).vcxproj|solutionrelative:Class 5th (Stack)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3D6F825-CC76-4394-B499-231FFF8ACD71}|Class4th (Vector)\\Class4th (Vector).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class4th (Vector)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D3D6F825-CC76-4394-B499-231FFF8ACD71}|Class4th (Vector)\\Class4th (Vector).vcxproj|solutionrelative:Class4th (Vector)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2B6DD3B9-1463-420F-A41E-15A558C15EED}|Class8th (Priority Queue)\\Class8th (Priority Queue).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class8th (Priority Queue)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2B6DD3B9-1463-420F-A41E-15A558C15EED}|Class8th (Priority Queue)\\Class8th (Priority Queue).vcxproj|solutionrelative:Class8th (Priority Queue)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45A9EC3A-A51D-476D-B4B1-15B2E236DECF}|Class3th (Circle Linked List)\\Class3th (Circle Linked List).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class3th (Circle Linked List)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -23,16 +19,24 @@
       "RelativeMoniker": "D:0:0:{0AB1C919-147D-48AB-915B-17C53CA09D70}|Class 2th (Double Linked List)\\Class 2th (Double Linked List).vcxproj|solutionrelative:Class 2th (Double Linked List)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{018746C0-69E0-46A2-A791-9A8D99882A2D}|Class 1th (Single Linked List)\\Class 1th (Single Linked List).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class 1th (Single Linked List)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{018746C0-69E0-46A2-A791-9A8D99882A2D}|Class 1th (Single Linked List)\\Class 1th (Single Linked List).vcxproj|solutionrelative:Class 1th (Single Linked List)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1AA87F-ECA8-42F1-A260-35C11AC99C8F}|Class 5th (Stack)\\Class 5th (Stack).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class 5th (Stack)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1B1AA87F-ECA8-42F1-A260-35C11AC99C8F}|Class 5th (Stack)\\Class 5th (Stack).vcxproj|solutionrelative:Class 5th (Stack)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3D6F825-CC76-4394-B499-231FFF8ACD71}|Class4th (Vector)\\Class4th (Vector).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class4th (Vector)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D3D6F825-CC76-4394-B499-231FFF8ACD71}|Class4th (Vector)\\Class4th (Vector).vcxproj|solutionrelative:Class4th (Vector)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{39CC9DB8-2204-409F-B5CB-FAFFE4B6360A}|Class7th (Circle queue)\\Class7th (Circle queue).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class7th (Circle queue)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{39CC9DB8-2204-409F-B5CB-FAFFE4B6360A}|Class7th (Circle queue)\\Class7th (Circle queue).vcxproj|solutionrelative:Class7th (Circle queue)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3FD60AB3-5BE4-4B71-985E-B1256C30C418}|Class6th (Linear Queue)\\Class6th (Linear Queue).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class6th (Linear Queue)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3FD60AB3-5BE4-4B71-985E-B1256C30C418}|Class6th (Linear Queue)\\Class6th (Linear Queue).vcxproj|solutionrelative:Class6th (Linear Queue)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{018746C0-69E0-46A2-A791-9A8D99882A2D}|Class 1th (Single Linked List)\\Class 1th (Single Linked List).vcxproj|C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class 1th (Single Linked List)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{018746C0-69E0-46A2-A791-9A8D99882A2D}|Class 1th (Single Linked List)\\Class 1th (Single Linked List).vcxproj|solutionrelative:Class 1th (Single Linked List)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,7 +78,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class8th (Priority Queue)\\Source.cpp",
+              "RelativeDocumentMoniker": "Class8th (Priority Queue)\\Source.cpp",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class8th (Priority Queue)\\Source.cpp",
+              "RelativeToolTip": "Class8th (Priority Queue)\\Source.cpp",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAcwFkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-06-26T09:07:35.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class7th (Circle queue)\\Source.cpp",
               "RelativeDocumentMoniker": "Class7th (Circle queue)\\Source.cpp",
@@ -86,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class6th (Linear Queue)\\Source.cpp",
               "RelativeDocumentMoniker": "Class6th (Linear Queue)\\Source.cpp",
@@ -98,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class 5th (Stack)\\Source.cpp",
               "RelativeDocumentMoniker": "Class 5th (Stack)\\Source.cpp",
@@ -110,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class4th (Vector)\\Source.cpp",
               "RelativeDocumentMoniker": "Class4th (Vector)\\Source.cpp",
@@ -122,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class3th (Circle Linked List)\\Source.cpp",
               "RelativeDocumentMoniker": "Class3th (Circle Linked List)\\Source.cpp",
@@ -130,11 +147,12 @@
               "RelativeToolTip": "Class3th (Circle Linked List)\\Source.cpp",
               "ViewState": "AQIAAAYAAAAAAAAAAAAowIwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-06-17T10:05:51.192Z"
+              "WhenOpened": "2026-06-17T10:05:51.192Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class 2th (Double Linked List)\\Source.cpp",
               "RelativeDocumentMoniker": "Class 2th (Double Linked List)\\Source.cpp",
@@ -142,19 +160,21 @@
               "RelativeToolTip": "Class 2th (Double Linked List)\\Source.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAI8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-06-16T09:11:33.253Z"
+              "WhenOpened": "2026-06-16T09:11:33.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Source.cpp",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class 1th (Single Linked List)\\Source.cpp",
               "RelativeDocumentMoniker": "Class 1th (Single Linked List)\\Source.cpp",
               "ToolTip": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Class 1th (Single Linked List)\\Source.cpp",
               "RelativeToolTip": "Class 1th (Single Linked List)\\Source.cpp",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACsAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-06-12T10:17:07.835Z"
+              "WhenOpened": "2026-06-12T10:17:07.835Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -164,7 +184,7 @@
               "RelativeDocumentMoniker": "Program\\Program.cpp",
               "ToolTip": "C:\\Users\\USER\\Desktop\\Program-Lecture\\Program\\Program\\Program.cpp",
               "RelativeToolTip": "Program\\Program.cpp",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAcwIEAAAASAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADQAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-06-11T10:43:08.98Z",
               "EditorCaption": ""
