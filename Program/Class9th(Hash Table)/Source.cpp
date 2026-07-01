@@ -144,8 +144,32 @@ public:
 
     ~HashTable()
     {
-        Node* deleteNode = bucket[0].head;
-        Node* nextNode = bucket[0].head;
+        Node* deleteNode;
+        Node* nextNode;
+
+        for (int i = 0; i < capacity - 1; i++)
+        {
+            deleteNode = bucket[i].head;
+            nextNode = bucket[i].head;
+
+            if (bucket[i].head == nullptr)
+            {
+                continue;
+            }
+            else
+            {
+                while (nextNode != nullptr)
+                {
+                    nextNode = deleteNode->next;
+
+                    delete deleteNode;
+
+                    deleteNode = nextNode;
+                }
+            }
+        }
+
+        delete [] bucket;
     }
 };
 

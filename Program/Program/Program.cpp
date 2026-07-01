@@ -2,170 +2,106 @@
 
 using namespace std;
 
-template<typename KEY, typename VALUE>
-class HashTable
+template<typename T>
+class Tree
 {
 private:
     struct Node
     {
-        KEY key;
-        VALUE value;
-        Node* next;
+        T data;
+        Node* left;
+        Node* right;
+        
+        Node(T data)
+        {
+            this->data = data;
+
+            left = nullptr;
+            right = nullptr;
+        }
     };
 
-    struct Bucket
-    {
-        int count;
-        Node* head;
-    };
-
-    int size;
-    int capacity;
-
-    Bucket* bucket;
+    Node* root;
 
 public:
-    HashTable()
+    Tree()
     {
-        size = 0;
-        capacity = 8;
-        bucket = new Bucket[capacity];
-        
-        for (int i = 0; i < capacity; i++)
-        {
-            bucket[i].head = nullptr;
-            bucket[i].count = 0;
-        }
+        root = nullptr;
     }
 
-    template<typename KEY>
-    unsigned int hash_function(KEY key)
+    void insert(T data)
     {
-        return (unsigned int)key % capacity;
-    }
-
-    template<>
-    unsigned int hash_function(const char* key)
-    {
-        unsigned int sum = 0;
-
-        for (int i = 0; *key != '\0'; i++)
+        if (root == nullptr)
         {
-            sum += key[i];
-
-            key = key + 1;
-        }
-
-        return sum % capacity;
-    }
-
-
-    void insert(KEY key, VALUE value)
-    {
-        int hashIndex = hash_function(key);
-
-        Node* newNode = new Node;
-        newNode->key = key;
-        newNode->value = value;
-        newNode->next = nullptr;
-
-        if (bucket[hashIndex].count == 0)
-        {
-            bucket[hashIndex].head = newNode;
+            root = new Node(data);
         }
         else
         {
-            newNode->next = bucket[hashIndex].head;
-
-            bucket[hashIndex].head = newNode;
-        }
-
-        bucket[hashIndex].count++;
-
-        size++;
-    }
-
-    void erase(KEY key)
-    {
-        int hashIndex = hash_function(key);
-
-        Node* currentNode = bucket[hashIndex].head;
-
-        Node* previousNode = nullptr;
-
-        if (currentNode == nullptr)
-        {
-            cout << "not key found..." << endl;
-        }
-        else
-        {
+            Node* currentNode = root;
             while (currentNode != nullptr)
             {
-                if (currentNode->key == key)
+                if (currentNode->data == data)
                 {
-                    if (currentNode == bucket[hashIndex].head)
+                    return;
+                }
+
+                if (data < currentNode->data)
+                {
+                    if (currentNode->left == nullptr)
                     {
-                        bucket[hashIndex].head = currentNode->next;
+                        currentNode->left = new Node(data);
                     }
                     else
                     {
-                        previousNode->next = currentNode->next;
+                        currentNode = currentNode->left;
                     }
-
-                    size--;
-
-                    bucket[hashIndex].count--;
-
-                    delete currentNode;
-
-                    return;
+                }
+                else if (data > currentNode->data)
+                {
+                    if (currentNode->right == nullptr)
+                    {
+                        currentNode->right = new Node(data);
+                    }
+                    else
+                    {
+                        currentNode = currentNode->right;
+                    }
                 }
                 else
                 {
-                    previousNode = currentNode;
-
-                    currentNode = currentNode->next;
+                    break;
                 }
             }
 
-            cout << "not key found..." << endl;
         }
+
     }
 
-    const int& bucket_count()
+    void inorder(Node* root)
     {
-        return capacity;
+        if (root == nullptr)
+        {
+            return;
+        }
+
+        inorder(root->left);
+
+        render();
     }
 
-    const float& load_factor()
+    void render()
     {
-        return (float)size / capacity;
-    }
-
-    ~HashTable()
-    {
-        Node* deleteNode = bucket[0].head;
-        Node* nextNode = bucket[0].head;
+        
     }
 };
 
 int main()
 {
-    HashTable<const char *, int> hashTable;
-    cout << hashTable.hash_function("League of Legend") << endl;
-    cout << hashTable.hash_function("Yasuo") << endl;
-    cout << hashTable.hash_function("Janna") << endl;
-
-    hashTable.insert("Abyssal Mask", 3000);
-    hashTable.insert("Bami's cinder", 1000);
-    hashTable.insert("chain Vest", 800);
-
-    hashTable.erase("Abyssal Mask");
-    hashTable.erase("Void staff");
-
-    cout << "Load Factor : " << hashTable.load_factor() << endl;
-    cout << "Bucket Count : " << hashTable.bucket_count() << endl;
+    Tree<int> tree;
+    tree.insert(10);
+    tree.insert(7);
+    tree.insert(15);
+    tree.insert(19);
 
     return 0;
 }
-
