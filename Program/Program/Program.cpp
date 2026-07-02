@@ -77,22 +77,99 @@ public:
 
     }
 
-    void inorder(Node* root)
+    void erase(T data)
     {
-        if (root == nullptr)
+        Node* parentNode = nullptr;
+        Node* currentNode = root;
+
+        while (currentNode != nullptr && currentNode->data != data)
         {
-            return;
+            parentNode = currentNode;
+
+            if (currentNode->data > data)
+            {
+                currentNode = currentNode->left;
+            }
+            else
+            {
+                currentNode = currentNode->right;
+            }
         }
 
-        inorder(root->left);
+        if (currentNode == nullptr)
+        {
+            cout << "the data does not exist" << endl;
 
-        render();
+            return;
+        }
+        else if (currentNode->left == nullptr && currentNode->right == nullptr)
+        {
+            if (parentNode != nullptr)
+            {
+                if (parentNode->left == currentNode)
+                {
+                    parentNode->left = nullptr;
+                }
+                else
+                {
+                    parentNode->right = nullptr;
+                }
+            }
+            else
+            {
+                root = nullptr;
+            }
+
+            delete currentNode;
+        }
+        else if (currentNode->left == nullptr || currentNode->right == nullptr)
+        {
+            Node* childNode = currentNode->left;
+
+            if (currentNode->left == nullptr)
+            {
+                childNode = currentNode->right;
+            }
+
+            if (parentNode != nullptr)
+            {
+                if (parentNode->left == currentNode)
+                {
+                    parentNode->left = childNode;
+                }
+                else
+                {
+                    parentNode->right = childNode;
+                }
+            }
+            else
+            {
+                root = childNode;
+            }
+
+            delete currentNode;
+        }
+    
+    }
+
+    void inorder(Node* root)
+    {
+        if (root != nullptr)
+        {
+            inorder(root->left);
+
+            cout << root->data << " ";
+
+            inorder(root->right);
+        }
+
     }
 
     void render()
     {
-        
+        inorder(root);
     }
+
 };
 
 int main()
@@ -102,6 +179,9 @@ int main()
     tree.insert(7);
     tree.insert(15);
     tree.insert(19);
+    tree.erase(15);
+
+    tree.render();
 
     return 0;
 }
